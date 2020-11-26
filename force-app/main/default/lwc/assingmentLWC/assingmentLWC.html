@@ -1,0 +1,28 @@
+<template>
+<lightning-card title="reservationdetails">
+  <div class="slds-m-around_medium">
+    <template if:true={reservationdetails}>
+      <template for:each={reservationdetails} for:item="reservationdetail">
+        <lightning-layout-item key={reservationdetail.id} size="5" class="slds-var-p-around_x-small">
+          <p>Reservation type:{reservationdetail.Name}</p>
+        <p>Reservation amount: {reservationdetail.Reservation_amount__c}</p>
+        <p>Tax:{reservationdetail.Tax_amount__c}</p>
+        <p>Total amount:{reservationdetail.Total_amount__c}</p>
+        </lightning-layout-item>
+      </template>
+    </template>
+</div>
+<template if:true={error}>
+  An error occured while loading the details
+</template>
+</lightning-card>
+</template>
+
+
+
+<!-- <p>Hello, {greeting}</p> -->
+<!-- <lightning-input name="input1" label="Input1"  value={input1} onchange={genericOnchangeone} ></lightning-input>
+<lightning-input name="input2" label="Input2"  value={input2} onchange={genericOnchangetwo}></lightning-input>
+<lightning-button label="click to add" onclick={doSum}></lightning-button>
+<lightning-output field label="Result" value={n3}></lightning-output field>
+<p>Results: {n3}</p> -->

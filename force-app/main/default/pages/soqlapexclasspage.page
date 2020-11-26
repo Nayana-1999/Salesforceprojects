@@ -1,0 +1,10 @@
+<apex:page controller="soqlapexclass">
+    <apex:pageBlock title="account details">
+<apex:pageBlockTable value="{!acc}" var="item">
+<apex:column value="{!item.Name}"/>
+<apex:column value="{!item.AccountNumber}"/>
+<apex:column value="{!item.AnnualRevenue}"/>
+<apex:column value="{!item.id}"/>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:page>

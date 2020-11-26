@@ -1,0 +1,13 @@
+<apex:page controller="OneMoreAppexClass">
+<!-- Begin Default Content REMOVE THIS -->
+<h1>Congratulations</h1>
+This is your new Page
+<apex:form>
+    <apex:commandbutton value="click" rerender="add" action="{!display}"/>
+    <apex:outputLabel id="add">
+        {!m}
+    </apex:outputLabel>
+</apex:form>
+<p>{!m}</p>
+<!-- End Default Content REMOVE THIS -->
+</apex:page>

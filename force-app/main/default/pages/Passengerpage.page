@@ -1,0 +1,7 @@
+<apex:page controller=" DisplayagegreaterThan ">
+    <apex:pageblock title="List of passenger">
+    <apex:pageBlockTable value="{!pass}" var="item">
+    <apex:column value="{!item.Name}"/>
+    </apex:pageBlockTable>
+     </apex:pageBlock>
+   </apex:page>
