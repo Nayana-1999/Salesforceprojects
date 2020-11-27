@@ -7,5 +7,3 @@ public with sharing class Caccount {
             return this.keyword;
          }
  }
-
-

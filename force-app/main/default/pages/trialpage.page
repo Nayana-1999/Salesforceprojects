@@ -2,7 +2,7 @@
 <!-- Begin Default Content REMOVE THIS -->
 <h1>Congratulations</h1>
 This is your new Page
-<apex:form>
+<apex:form >
     <apex:commandbutton value="click" rerender="add" action="{!display}"/>
     <apex:outputLabel id="add">
         {!m}
