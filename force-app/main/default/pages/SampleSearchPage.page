@@ -1,0 +1,16 @@
+<apex:page controller="SampleSearch">
+<apex:form >
+<apex:pageBlock title="search your records here">
+<apex:inputText value="{!searchKey}"/>
+<apex:commandButton value="search" action="{!searchRecord}"/>
+</apex:pageBlock>
+</apex:form>
+
+<apex:repeat value="{!pass}" var="item" rendered="true">
+<apex:repeat value="{!item}" var="item">
+<apex:outputText value="{!item['name']}" >
+</apex:outputText><br/>
+</apex:repeat>
+</apex:repeat>
+ 
+</apex:page>

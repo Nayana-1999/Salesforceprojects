@@ -1,0 +1,8 @@
+<apex:page controller="joinapexclass">
+<apex:pageBlock title="accounts having no oppurtunities">
+<apex:pageBlockTable value="{!acco}" var="item">
+<apex:column value="{!item.id}"/>
+<apex:column value="{!item.Name}"/>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:page>

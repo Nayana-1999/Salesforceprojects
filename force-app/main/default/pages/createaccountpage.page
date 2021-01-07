@@ -1,0 +1,7 @@
+<apex:page controller="createAccount" >
+ 
+ <apex:form >
+ <apex:commandButton value="click" action="{!Insertion}"/>
+ 
+ </apex:form>
+ </apex:page>
